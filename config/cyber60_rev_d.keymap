@@ -75,6 +75,33 @@
             bindings = <&kp LS(DOWN) &kp LS(DOWN) &kp LS(DOWN) &kp LS(DOWN) &kp LS(DOWN) &kp LS(DOWN) &kp LG(X) &kp LA(PAGE_UP) &kp ENTER &kp LG(V) &kp LA(PAGE_UP) &kp ENTER &kp ENTER &kp LS(B) &kp E &kp S &kp T &kp COMMA &kp RET &kp RET &kp LS(S) &kp T &kp E &kp V &kp E &kp RET &kp LA(PAGE_UP)>;
             label = "REPLYFIX";
         };
+
+        FixTable: FixTable {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LG(T)>,
+                <&macro_wait_time 20>,
+                <&kp KP_ENTER>,
+                <&macro_wait_time 20>,
+                <&kp LS(LA(LC(R))) &kp NUMBER_4 &kp N0 &kp ENTER &kp LS(LC(LG(H)))>;
+
+            label = "FIXTABLE";
+        };
+
+        EditCase: EditCase {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F2 &kp LG(HOME) &kp LA(ENTER) &kp LA(ENTER) &kp LG(HOME)>;
+            label = "EDITCASE";
+        };
+
+        m14: m14 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V) &kp LA(PAGE_UP)>;
+            label = "M14";
+        };
     };
 
     keymap {
