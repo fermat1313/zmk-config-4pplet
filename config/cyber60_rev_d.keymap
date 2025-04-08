@@ -133,11 +133,11 @@
         layer_4 {
             display-name = "Function Layer";
             bindings = <
-&trans  &trans  &trans  &bl BL_DEC  &bl BL_DEC             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bl BL_TOG  &trans
-&trans  &trans  &trans  &trans      &bootloader            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &kp LS(LA(LC(LG(C))))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans                 &trans  &trans  &trans  &trans  &trans
+&trans    &trans  &trans  &bl BL_DEC             &bl BL_DEC             &trans                 &trans   &trans  &trans  &trans          &trans                  &trans                 &trans  &bl BL_TOG  &trans
+&trans    &trans  &trans  &trans                 &bootloader            &kp RS(RA(RC(RG(T))))  &trans   &trans  &trans  &kp LS(LG(N8))  &kp LS(LA(LC(LG(N4))))  &trans                 &trans  &trans
+&kp CAPS  &trans  &trans  &kp LS(LA(LC(LG(T))))  &findpaste             &trans                 &HTOMSR  &trans  &trans  &trans          &trans                  &trans                 &trans  &trans
+&trans    &trans  &trans  &CloseCase             &kp LS(LA(LC(LG(C))))  &trans                 &trans   &trans  &trans  &trans          &trans                  &kp LG(LC(LA(LS(L))))  &trans  &trans
+&trans    &trans  &trans  &trans                 &trans                 &trans                 &trans   &trans  &trans  &trans
 &trans
             >;
 
@@ -147,11 +147,11 @@
         fn_layer_1 {
             display-name = "GUI Replacement";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp C_BRI_DN  &kp C_BRI_UP  &kp F11       &trans     &trans     &trans     &kp C_PREV  &kp C_PLAY_PAUSE  &kp C_NEXT  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_DOWN  &trans  &trans
+&trans  &trans        &kp LG(W)     &kp KP_ENTER  &kp LG(R)  &kp LG(T)  &kp LG(Y)  &trans      &trans            &trans      &trans      &trans        &trans             &trans
+&trans  &kp LG(A)     &kp LG(S)     &kp DEL       &kp LG(F)  &trans     &trans     &trans      &trans            &trans      &trans      &trans        &trans             &trans
+&trans  &trans        &kp LG(Z)     &kp LG(X)     &kp LG(C)  &kp LG(V)  &trans     &trans      &trans            &trans      &trans      &trans        &trans             &trans
+&trans  &trans        &trans        &trans        &trans     &trans     &trans     &trans      &trans            &trans
 &trans
             >;
 
@@ -161,12 +161,12 @@
         fn_layer_2 {
             display-name = "Navigation";
             bindings = <
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp        &kp  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp UP_ARROW  &kp        &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp LEFT  &kp DOWN      &kp RIGHT  &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp        &kp  &kp  &kp  &kp
-&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp
-&kp
+&trans  &kp F1          &kp F2          &kp F3            &kp F4                 &kp F5         &kp F6         &kp F7    &kp F8        &kp F9     &kp F10   &kp F11    &kp F12  &trans  &trans
+&trans  &trans          &kp UP_ARROW    &kp LA(KP_ENTER)  &kp HOME               &kp PG_UP      &trans         &trans    &kp UP_ARROW  &trans     &kp HOME  &kp PG_UP  &trans   &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END                &kp PAGE_DOWN  &HTOM          &kp LEFT  &kp DOWN      &kp RIGHT  &kp END   &kp PG_DN  &trans   &trans
+&trans  &trans          &trans          &kp DELETE        &kp LS(LA(LC(LG(C))))  &kp LC(LG(V))  &kp BACKSPACE  &trans    &trans        &trans     &trans    &trans     &trans   &trans
+&trans  &trans          &trans          &trans            &trans                 &trans         &trans         &trans    &trans        &trans
+&trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
