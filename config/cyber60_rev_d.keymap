@@ -133,11 +133,11 @@
         layer_4 {
             display-name = "Function Layer";
             bindings = <
-&trans  &trans  &trans  &bl BL_DEC  &bl BL_DEC  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bl BL_TOG  &trans
-&trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans      &trans      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &bl BL_DEC  &bl BL_DEC             &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &bl BL_TOG  &trans
+&trans  &trans  &trans  &trans      &bootloader            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &kp LS(LA(LC(LG(C))))  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans      &trans                 &trans  &trans  &trans  &trans  &trans
 &trans
             >;
 
@@ -161,12 +161,12 @@
         fn_layer_2 {
             display-name = "Navigation";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp        &kp  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp UP_ARROW  &kp        &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp LEFT  &kp DOWN      &kp RIGHT  &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp        &kp  &kp  &kp  &kp
+&kp  &kp  &kp  &kp  &kp  &kp  &kp  &kp       &kp           &kp
+&kp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
