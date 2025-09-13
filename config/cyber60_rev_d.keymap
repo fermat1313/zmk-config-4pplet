@@ -126,8 +126,6 @@
 &kp LCTRL    &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &kp SPACE  &kp SPACE  &kp RALT  &kp RIGHT_ALT  &mo 0   &kp RCTRL
 &kp C_PP
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         Fn_layer {
